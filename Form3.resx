@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>	Инструкция по установке связи с автомобилями Крайслер до 95 года. 
+С бензиновым впрыском на базе модуля SBEC, через SCI (Serial Communication Interface).
+		
+								by Poul Sirius (Паштет)
+
+Железо.
+В большинстве случаев современные ноутбуки, нетбуки и лэптопы имеют только USB порты для подключения внешних устройств. По этому мы будем использовать универсальный USB чип фирмы FTDI модели FT232RL для подключения к нашему SBEC (YJ, XJ, ZJ). 
+
+Подойдет адаптер любого производителя и исполнения. Главное условие — чип FT232RL во главе. Можно заказать чип отдельно и самому распаять его на макетку. Схемы и печатки есть на нашем форуме в моей (смею обнаглеть) теме.
+
+
+Подключение.
+Как только вы получите долгожданный шнурок из Китая, вам понадобится его правильно подключить к машине. Об этом и пойдет рассказ ниже. 
+Чтобы было удобно часто подключаться можно купить или изготовить разъём для вашего диагностического кабеля. Если лень, то можно просто обжать три наконечника типа «папа».
+На автомобиле Jeep разъём диагностики находится в 10-20 см от самого SBEC прямо на жгуте проводов и защелкнут в защитную заглушку.
+Нам понадобяться три вывода из адаптера на базе FTDI. Это RX, TX и GND.
+Подключите их следующим образом:
+Адаптер TX (обычно оранжевый) → Машина RX (обратитесь к схемам Крайслера)
+Адаптер RX (обычно Желтый) → Машина TX (обратитесь к схемам Крайслера)
+Адаптер GND (обычно черный) → Машина GND (обратитесь к схемам Крайслера)
+На этом процедура подключения закончена.
+
+Программная часть.
+Адаптеры на базе FTDI очень гибкие в настройке и требуют некоторой подготовки для успешной работы в различных схемах. В нашем случае это SCI порт микроконтроллера Motorola. Следовательно нужно инвертировать сигналы RX-TX. Еще можно уменьшить таймауты, что ускорит работу порта.
+Вам потребуется скачать драйвера для вашего адаптера и утилиту FT_PROG с сайта FTDI.
+Так же вам может помочь программа FTDIclean в случае если необходимо удалить старые драйвера. Помните что это ядерная штука и её следует использовать в крайнем случае. (мне не приходилось). 
+Драйвера: http://www.ftdichip.com/Drivers/VCP.htm
+Скачайте последнюю версию с пометкой VCP подходящую к вашей операционной системе. 
+
+FT_PROG: http://www.ftdichip.com/Support/Utilities.htm#FT_Prog
+
+FT_CLEAN: http://www.ftdichip.com/Resources/Utilities/FTClean.zip
+
+Установка драйверов.
+На этой стадии ваш адаптер должен быть отключен от машины и от компа. Были случаи когда адаптер вставленный в USB и в машину с выключенным зажиганием сильно нагревался. Избегайте таких режимов.
+Если вы скачали драйвера как .exe файл, то просто запустите его. Если скачали архив, то распакуйте и установите дрова. После этого вставьте адаптер в USB порт. Должен раздаться виндовый звук (тынь-тынь) и винда сама установит новое устройство.
+
+Настройка адаптера с помощью FT_PROG.
+Теперь, когда устройство подключено и драйвера установлены без ошибок, мы можем приступить к настройке адаптера для работы с нашей машиной. Обязательно проследите чтобы в данный момент к компу был подключен только один адаптер такого типа. Запустите приложение FT_PROG. В меню devices выберите Scan and Parse (или просто F5). Если все прошло хорошо, то вы увидите что поля приложения наполнились смыслом. :) В левой части окна разверните секцию Hardware Specific. В ней выберите пункт Invert RS232 Signals. В правой части окна поставьте галочки напротив пунктов Invert TXD и Invert RXD. Теперь можно приступать к записи настроек в адаптер (прошивке или программированию). Нажмите на значёк молнии в верхней панели кнопок. Если в появившемся окне вы видите только одно устройство для прошивки, то смело нажимайте кнопку Program. Если всё прошло хорошо, то в нижней части окна появится надпись Finished Programming. Адаптер готов.
+
+Уменьшение таймаутов для ускорения.
+Откройте менеджер устройств. Разверните секцию COM и LPT портов. Выберите порт нашего USB to serial converter. Откройте свойства. Выберите вкладку Port Settings. Нажмите кнопку Advanced. Установите значение Latency Timer равным единице. Запомните номер COM порта. Нажмите на всех открытых окнах OK и закройте менеджер. С этим закончили.
+
+Установка связи с машиной.
+Включите в машине зажигание. Подключите адаптер к машине и компу. Запустите приложение CDT. В меню Подключение выберите Настройки. Установите запомненный ранее номер компорта. Скорость оставьте без изменений (7812). Нажмите ОК. В меню подключение выберите пункт Установить связь. Если через 5-10 секунд поля программы заполнились данными, то у вас всё получилось! Удачи!
+
+                                                                         			     Poul Sirius 07.09.2016
+      </value>
+  </data>
+</root>
