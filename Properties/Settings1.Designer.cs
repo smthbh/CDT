@@ -46,17 +46,5 @@ namespace CDT.Properties {
                 this["UseBaud"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Languageru {
-            get {
-                return ((bool)(this["Languageru"]));
-            }
-            set {
-                this["Languageru"] = value;
-            }
-        }
     }
 }
