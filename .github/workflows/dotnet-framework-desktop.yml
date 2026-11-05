@@ -1,0 +1,46 @@
+name: Build .NET Framework Desktop App
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    # Essential: .NET Framework requires a Windows environment
+    runs-on: windows-latest
+
+    env:
+      SOLUTION_FILE_PATH: CDT.sln # Change to your .sln path
+      BUILD_CONFIGURATION: Release
+      BUILD_PLATFORM: x86 # Change to x86 or x64 if required by your desktop app
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # Installs MSBuild onto the runner path
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    # Installs NuGet CLI to restore legacy packages
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1
+
+    # Restores packages based on your solution file
+    - name: Restore NuGet Packages
+      run: nuget restore $env:SOLUTION_FILE_PATH
+
+    # Compiles the Desktop application
+    - name: Build Desktop Application
+      run: |
+        msbuild $env:SOLUTION_FILE_PATH /p:Configuration=$env:BUILD_CONFIGURATION /p:Platform="$env:BUILD_PLATFORM"
+
+    # Optional: Uploads the compiled binaries (e.g., .exe, .dll) as an artifact
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: desktop-app-release
+        path: ${{ github.workspace }}/bin/${{ env.BUILD_CONFIGURATION }}/
+        if-no-files-found: error
