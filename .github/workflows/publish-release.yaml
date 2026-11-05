@@ -29,12 +29,12 @@ jobs:
           cd release-contents
           zip -r ../CDT-Release-${{ github.ref_name }}.zip .
 
-      - name: Create Official GitHub Release
+      - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref_name }}
           name: "Release ${{ github.ref_name }}"
-          body: "Automated production release assets for version ${{ github.ref_name }}."
+          omitBodyDuringUpdate: true
           artifacts: "CDT-Release-${{ github.ref_name }}.zip"
           allowUpdates: true
