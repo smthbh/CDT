@@ -43,4 +43,4 @@ jobs:
       with:
         name: desktop-app-release
         path: |
-          **/bin/$env:BUILD_CONFIGURATION/
+          **/CDT/CDT/bin/$env:BUILD_CONFIGURATION/
