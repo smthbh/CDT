@@ -44,7 +44,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Com порт:";
+            this.label1.Text = "Com port:";
             // 
             // label2
             // 
@@ -53,7 +53,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Скорость порта:";
+            this.label2.Text = "Port speed:";
             // 
             // comports
             // 
@@ -87,7 +87,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Сохранить";
+            this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -97,7 +97,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Отмена";
+            this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -118,7 +118,7 @@
             this.MinimizeBox = false;
             this.Name = "Settingsform";
             this.ShowIcon = false;
-            this.Text = "Настройки соединения";
+            this.Text = "Connection Settings";
             this.Load += new System.EventHandler(this.Settingsform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.baudrate)).EndInit();
             this.ResumeLayout(false);

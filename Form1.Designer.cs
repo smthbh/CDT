@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Требуется переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Обязательный метод для поддержки конструктора - не изменяйте
-        /// содержимое данного метода при помощи редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -200,21 +200,21 @@
             this.exitToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
-            this.toolStripMenuItem1.Text = "Файл";
+            this.toolStripMenuItem1.Text = "File";
             // 
             // saveEEPROMToolStripMenuItem
             // 
             this.saveEEPROMToolStripMenuItem.Name = "saveEEPROMToolStripMenuItem";
             this.saveEEPROMToolStripMenuItem.Size = new System.Drawing.Size(324, 22);
-            this.saveEEPROMToolStripMenuItem.Text = "Сохранить EEPROM в файл (512 байт) ~30 сек";
-            this.saveEEPROMToolStripMenuItem.Click += new System.EventHandler(this.сохранитьEEPROMВФайлToolStripMenuItem_Click);
+            this.saveEEPROMToolStripMenuItem.Text = "Save EEPROM to file (512bytes ~30sec)";
+            this.saveEEPROMToolStripMenuItem.Click += new System.EventHandler(this.saveEEPROMToolStripMenuItem_Click);
             // 
             // saveFirmwareToolStripMenuItem
             // 
             this.saveFirmwareToolStripMenuItem.Name = "saveFirmwareToolStripMenuItem";
             this.saveFirmwareToolStripMenuItem.Size = new System.Drawing.Size(324, 22);
-            this.saveFirmwareToolStripMenuItem.Text = "Сохранить прошивку в файл (32Kb) ~30 мин";
-            this.saveFirmwareToolStripMenuItem.Click += new System.EventHandler(this.сохранитьПрошивкуВФайлToolStripMenuItem_Click);
+            this.saveFirmwareToolStripMenuItem.Text = "Save firmware to file (32Kb ~30min)";
+            this.saveFirmwareToolStripMenuItem.Click += new System.EventHandler(this.saveFirmwareToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -225,8 +225,8 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(324, 22);
-            this.exitToolStripMenuItem.Text = "Выход";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // connectionToolStripMenuItem
             // 
@@ -237,22 +237,22 @@
             this.settingsToolStripMenuItem});
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
             this.connectionToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
-            this.connectionToolStripMenuItem.Text = "Подключение";
+            this.connectionToolStripMenuItem.Text = "Connection";
             // 
             // connectToolStripMenuItem
             // 
             this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
             this.connectToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.connectToolStripMenuItem.Text = "Установить связь";
-            this.connectToolStripMenuItem.Click += new System.EventHandler(this.установитьСвязьToolStripMenuItem_Click);
+            this.connectToolStripMenuItem.Text = "Connect";
+            this.connectToolStripMenuItem.Click += new System.EventHandler(this.connectToolStripMenuItem_Click);
             // 
             // disconnectToolStripMenuItem
             // 
             this.disconnectToolStripMenuItem.Enabled = false;
             this.disconnectToolStripMenuItem.Name = "disconnectToolStripMenuItem";
             this.disconnectToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.disconnectToolStripMenuItem.Text = "Разорвать связь";
-            this.disconnectToolStripMenuItem.Click += new System.EventHandler(this.разорватьСвязьToolStripMenuItem_Click);
+            this.disconnectToolStripMenuItem.Text = "Disconnect";
+            this.disconnectToolStripMenuItem.Click += new System.EventHandler(this.disconnectToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -263,8 +263,8 @@
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.settingsToolStripMenuItem.Text = "Настройки";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.настройкиToolStripMenuItem_Click);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -275,14 +275,14 @@
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.helpToolStripMenuItem.Text = "Помощь";
+            this.helpToolStripMenuItem.Text = "Help";
             // 
             // instructionsToolStripMenuItem
             // 
             this.instructionsToolStripMenuItem.Name = "instructionsToolStripMenuItem";
             this.instructionsToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
-            this.instructionsToolStripMenuItem.Text = "Инструкция по подключению";
-            this.instructionsToolStripMenuItem.Click += new System.EventHandler(this.какНастроитьJMDRBToolStripMenuItem_Click);
+            this.instructionsToolStripMenuItem.Text = "Russian instructions";
+            this.instructionsToolStripMenuItem.Click += new System.EventHandler(this.instructionsToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -293,15 +293,15 @@
             // 
             this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
             this.donateToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
-            this.donateToolStripMenuItem.Text = "Поблагодарить";
-            this.donateToolStripMenuItem.Click += new System.EventHandler(this.поблагодаритьToolStripMenuItem_Click);
+            this.donateToolStripMenuItem.Text = "Donate";
+            this.donateToolStripMenuItem.Click += new System.EventHandler(this.donateToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
-            this.aboutToolStripMenuItem.Text = "О программе...";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Text = "About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
@@ -389,7 +389,7 @@
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(890, 435);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Графики";
+            this.tabPage6.Text = "Graphs";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -401,7 +401,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(120, 17);
             this.checkBox3.TabIndex = 14;
-            this.checkBox3.Text = "Рисовать секунды";
+            this.checkBox3.Text = "Draw seconds";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -411,7 +411,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(79, 17);
             this.checkBox2.TabIndex = 13;
-            this.checkBox2.Text = "Сохранять";
+            this.checkBox2.Text = "Save every screen";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // button20
@@ -420,7 +420,7 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(70, 23);
             this.button20.TabIndex = 12;
-            this.button20.Text = "Сохранить";
+            this.button20.Text = "Save";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
@@ -483,7 +483,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(71, 17);
             this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Очищать";
+            this.checkBox1.Text = "Clear";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // level5
@@ -513,7 +513,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(39, 23);
             this.button17.TabIndex = 2;
-            this.button17.Text = "Стоп";
+            this.button17.Text = "Stop";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
@@ -543,7 +543,7 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(890, 435);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Realtime мониторинг";
+            this.tabPage4.Text = "Realtime parameters";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -585,7 +585,7 @@
             // Checkboxes
             // 
             this.Checkboxes.Frozen = true;
-            this.Checkboxes.HeaderText = "Вкл монитор.";
+            this.Checkboxes.HeaderText = "Enable monitoring";
             this.Checkboxes.Name = "Checkboxes";
             this.Checkboxes.Width = 73;
             // 
@@ -608,7 +608,7 @@
             // ParameterDescription
             // 
             this.ParameterDescription.Frozen = true;
-            this.ParameterDescription.HeaderText = "Параметр";
+            this.ParameterDescription.HeaderText = "Parameter name";
             this.ParameterDescription.Name = "ParameterDescription";
             this.ParameterDescription.ReadOnly = true;
             this.ParameterDescription.Width = 83;
@@ -616,7 +616,7 @@
             // ParameterValue
             // 
             this.ParameterValue.Frozen = true;
-            this.ParameterValue.HeaderText = "Текущее значение";
+            this.ParameterValue.HeaderText = "Current value";
             this.ParameterValue.Name = "ParameterValue";
             this.ParameterValue.ReadOnly = true;
             this.ParameterValue.Width = 116;
@@ -645,7 +645,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(890, 435);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Тесты";
+            this.tabPage3.Text = "Hardware tests";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // label27
@@ -655,7 +655,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(169, 13);
             this.label27.TabIndex = 9;
-            this.label27.Text = "Требуемые обороты двигателя:";
+            this.label27.Text = "Temporarily set idle RPM to:";
             // 
             // button19
             // 
@@ -663,7 +663,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(110, 23);
             this.button19.TabIndex = 8;
-            this.button19.Text = "Установить";
+            this.button19.Text = "Set RPM";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
@@ -712,7 +712,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 53);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Стоп";
+            this.button3.Text = "Stop";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -725,7 +725,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 20);
             this.label15.TabIndex = 4;
-            this.label15.Text = "Ошибка!";
+            this.label15.Text = "Error!";
             this.label15.Visible = false;
             // 
             // label14
@@ -737,7 +737,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(83, 20);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Успешно";
+            this.label14.Text = "OK";
             this.label14.Visible = false;
             // 
             // label12
@@ -748,7 +748,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(295, 23);
             this.label12.TabIndex = 1;
-            this.label12.Text = "Активация исполнительных узлов.";
+            this.label12.Text = "Actuator tests";
             this.label12.DoubleClick += new System.EventHandler(this.label12_DoubleClick);
             // 
             // listBox1
@@ -756,46 +756,46 @@
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "00 Остановить все тесты",
-            "01 Катушка зажигания",
-            "02 Остановить все тесты",
-            "03 Остановить все тесты",
-            "04 Форсунка 1",
-            "05 Форсунка 2",
-            "06 Форсунка 3",
-            "07 Клапан холостого хода",
-            "08 Реле вентилятора",
-            "09 Реле муфты кондиционера",
-            "0A Реле ASD",
-            "0B Соленоид адсорбера",
-            "0C Соленоид круиз-контроля",
-            "0D Цепь возбуждения генератора",
-            "0E Тест ТАХОМЕТРА",
-            "0F Лампа переключения на высшую передачу",
-            "10 Соленоид EGR",
-            "11 Неизвестно",
-            "12 Клапан ХХ закрыть",
-            "13 Остановить все тесты",
-            "14 Все соленоиды и реле",
-            "15 Остановить все тесты",
-            "16 Остановить все тесты",
-            "17 Остановить все тесты",
-            "18 Остановить все тесты",
-            "19 Остановить все тесты",
-            "1A Неизвестно",
-            "1B Неизвестно",
-            "1C Реле топливного насоса",
-            "1D Форсунка 4",
-            "1E Форсунка 5",
-            "1F Форсунка 6",
-            "20 Неизвестно",
-            "21 Остановить все тесты",
-            "22 Неизвестно",
-            "23 Неизвестно",
-            "24 Неизвестно",
-            "25 Форсунка 7",
-            "26 Форсунка 8",
-            "27 Реле балластного резистора"});
+            "Stop all tests",
+            "Ignition coil",
+            "Unknown",
+            "Unknown",
+            "Injector 1",
+            "Injector 2",
+            "Injector 3",
+            "AIS motor toggle",
+            "Fan relay",
+            "A/C relay",
+            "ASD relay",
+            "Purge solenoid",
+            "Speed control relay",
+            "Alternator field",
+            "Tach output",
+            "Upshift lamp",
+            "EGR solenoid",
+            "Unknown",
+            "AIS motor close",
+            "Unknown",
+            "All solenoids",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Fuel pump relay",
+            "Injector 4",
+            "Injector 5",
+            "Injector 6",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Injector 7",
+            "Injector 8",
+            "Ignition coil resistor relay"});
             this.listBox1.Location = new System.Drawing.Point(3, 3);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(433, 429);
@@ -813,7 +813,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(890, 435);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Инфо";
+            this.tabPage1.Text = "Info";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox8
@@ -827,7 +827,7 @@
             this.groupBox8.Size = new System.Drawing.Size(874, 240);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Ошибки";
+            this.groupBox8.Text = "Trouble codes";
             // 
             // textBox16
             // 
@@ -857,7 +857,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 25);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Стереть";
+            this.button2.Text = "Clear DTC";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -867,7 +867,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 25);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Прочитать";
+            this.button1.Text = "Read DTC";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -888,7 +888,7 @@
             this.groupBox3.Size = new System.Drawing.Size(321, 176);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Опции контроллера";
+            this.groupBox3.Text = "Connected SBEC options";
             // 
             // textBox18
             // 
@@ -905,7 +905,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(175, 13);
             this.label22.TabIndex = 22;
-            this.label22.Text = "Коррекция напряжения зарядки:";
+            this.label22.Text = "Charge voltage correction:";
             // 
             // label21
             // 
@@ -914,7 +914,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(150, 13);
             this.label21.TabIndex = 20;
-            this.label21.Text = "VIN (только в SBEC 2 с 94г):";
+            this.label21.Text = "VIN (only after 94y):";
             // 
             // textBox17
             // 
@@ -939,7 +939,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(88, 13);
             this.label17.TabIndex = 18;
-            this.label17.Text = "Иммобилайзер:";
+            this.label17.Text = "Immobilizer:";
             // 
             // textBox14
             // 
@@ -956,7 +956,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(180, 13);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Коррекция зажигания в градусах:";
+            this.label10.Text = "Spark advance correction:";
             // 
             // label8
             // 
@@ -965,7 +965,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(47, 13);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Пробег:";
+            this.label8.Text = "Mileage:";
             // 
             // textBox8
             // 
@@ -994,7 +994,7 @@
             this.groupBox2.Size = new System.Drawing.Size(304, 177);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Подключенный контроллер";
+            this.groupBox2.Text = "Connected SBEC info";
             // 
             // modelyear
             // 
@@ -1019,7 +1019,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(89, 13);
             this.label13.TabIndex = 18;
-            this.label13.Text = "Модельный год:";
+            this.label13.Text = "Model year(jeep):";
             // 
             // label16
             // 
@@ -1028,7 +1028,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(77, 13);
             this.label16.TabIndex = 16;
-            this.label16.Text = "Кондиционер:";
+            this.label16.Text = "Air/con(jeep):";
             // 
             // transtype
             // 
@@ -1045,7 +1045,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Трансмиссия:";
+            this.label5.Text = "Transmission(jeep):";
             // 
             // enginetype
             // 
@@ -1062,7 +1062,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 12;
-            this.label11.Text = "Двигатель:";
+            this.label11.Text = "Engine(jeep):";
             // 
             // bodytype
             // 
@@ -1079,7 +1079,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Кузов:";
+            this.label4.Text = "Body(jeep):";
             // 
             // sbecid
             // 
@@ -1096,7 +1096,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "ID блока:";
+            this.label6.Text = "SBEC ID:";
             // 
             // groupBox1
             // 
@@ -1114,7 +1114,7 @@
             this.groupBox1.Size = new System.Drawing.Size(231, 177);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Соединение";
+            this.groupBox1.Text = "Connection";
             // 
             // textBox7
             // 
@@ -1123,7 +1123,7 @@
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(108, 20);
             this.textBox7.TabIndex = 7;
-            this.textBox7.Text = "Закрыт";
+            this.textBox7.Text = "Closed";
             // 
             // label7
             // 
@@ -1132,7 +1132,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Состояние порта:";
+            this.label7.Text = "Com port state:";
             // 
             // textBox3
             // 
@@ -1149,7 +1149,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Ответ от SBEC:";
+            this.label3.Text = "SBEC response:";
             // 
             // linkLabel1
             // 
@@ -1160,7 +1160,7 @@
             this.linkLabel1.Size = new System.Drawing.Size(139, 28);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Поблагодарить";
+            this.linkLabel1.Text = "Donate! :)";
             this.linkLabel1.Visible = false;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
@@ -1179,7 +1179,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Скорость:";
+            this.label2.Text = "Baud rate:";
             // 
             // textBox1
             // 
@@ -1196,7 +1196,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Com порт:";
+            this.label1.Text = "Com port name:";
             // 
             // tabControl1
             // 
@@ -1232,7 +1232,7 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(890, 435);
             this.tabPage5.TabIndex = 6;
-            this.tabPage5.Text = "Экстра";
+            this.tabPage5.Text = "Extra options";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox7
@@ -1244,7 +1244,7 @@
             this.groupBox7.Size = new System.Drawing.Size(320, 81);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Вин номер";
+            this.groupBox7.Text = "VIN Number";
             this.groupBox7.Visible = false;
             // 
             // textBox21
@@ -1261,7 +1261,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(68, 23);
             this.button16.TabIndex = 2;
-            this.button16.Text = "Сохранить";
+            this.button16.Text = "Save";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
@@ -1276,7 +1276,7 @@
             this.groupBox6.Size = new System.Drawing.Size(221, 106);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Состояние иммобилайзера";
+            this.groupBox6.Text = "Immo condition";
             // 
             // button15
             // 
@@ -1284,7 +1284,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(209, 23);
             this.button15.TabIndex = 4;
-            this.button15.Text = "Отключить навсегда";
+            this.button15.Text = "Disable forever";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -1301,7 +1301,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(103, 23);
             this.button13.TabIndex = 2;
-            this.button13.Text = "Включить";
+            this.button13.Text = "Enable";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -1311,7 +1311,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(100, 23);
             this.button14.TabIndex = 1;
-            this.button14.Text = "Отключить";
+            this.button14.Text = "Swich off";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
@@ -1325,7 +1325,7 @@
             this.groupBox5.Size = new System.Drawing.Size(320, 106);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Энергонезависимая коррекция напряжения зарядки";
+            this.groupBox5.Text = "Battery charge voltage correction";
             this.groupBox5.Visible = false;
             // 
             // textBox19
@@ -1363,7 +1363,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(319, 23);
             this.button9.TabIndex = 6;
-            this.button9.Text = "Сбросить EMR (лампочка MaintReq)";
+            this.button9.Text = "Reset MaintReq lamp (EMR)";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -1384,7 +1384,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(319, 23);
             this.button8.TabIndex = 3;
-            this.button8.Text = "!!! Сбросить весь EEPROM !!! (для понимающих)";
+            this.button8.Text = "!!! Reset entire EEPROM !!! (for advanced users)";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -1394,7 +1394,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(319, 23);
             this.button7.TabIndex = 2;
-            this.button7.Text = "Сбросить все адаптивные данные";
+            this.button7.Text = "Reset all adaptive data";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -1404,7 +1404,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(319, 23);
             this.button6.TabIndex = 1;
-            this.button6.Text = "Сбросить значение минимального положения дросселя";
+            this.button6.Text = "Reset min throttle position";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -1420,7 +1420,7 @@
             this.groupBox4.Size = new System.Drawing.Size(320, 106);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Энергонезависимая коррекция зажигания";
+            this.groupBox4.Text = "Spark advance correction";
             // 
             // label20
             // 
@@ -1429,7 +1429,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(46, 13);
             this.label20.TabIndex = 5;
-            this.label20.Text = "Раньше";
+            this.label20.Text = "Earlier";
             // 
             // label19
             // 
@@ -1438,7 +1438,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(41, 13);
             this.label19.TabIndex = 4;
-            this.label19.Text = "Позже";
+            this.label19.Text = "Later";
             // 
             // textBox15
             // 
@@ -1483,8 +1483,8 @@
             // 
             this.MakeScreenshotToolStripMenuItem.Name = "MakeScreenshotToolStripMenuItem";
             this.MakeScreenshotToolStripMenuItem.Size = new System.Drawing.Size(166, 20);
-            this.MakeScreenshotToolStripMenuItem.Text = "Сохранить скриншот окна";
-            this.MakeScreenshotToolStripMenuItem.Click += new System.EventHandler(this.СохранитьСкриншотОкнаToolStripMenuItem_Click);
+            this.MakeScreenshotToolStripMenuItem.Text = "Make screenshot";
+            this.MakeScreenshotToolStripMenuItem.Click += new System.EventHandler(this.MakeScreenshotToolStripMenuItem_Click);
             // 
             // Form1
             // 

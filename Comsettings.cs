@@ -36,14 +36,11 @@ namespace CDT
         {
             comports.Text = Properties.Settings.Default.UsePort;
             baudrate.Value = Properties.Settings.Default.UseBaud;
-            if (Properties.Settings.Default.Languageru == false)
-            {
-                this.Text = "Connection settings";
-                label1.Text = "Com port:";
-                label2.Text = "Baud rate:";
-                button1.Text = "Save";
-                button2.Text = "Cancel";
-            }
+            this.Text = "Connection settings";
+            label1.Text = "Com port:";
+            label2.Text = "Baud rate:";
+            button1.Text = "Save";
+            button2.Text = "Cancel";
         }
 
         private void button2_Click(object sender, EventArgs e)
