@@ -36,5 +36,5 @@ jobs:
           tag: ${{ github.ref_name }}
           name: "Release ${{ github.ref_name }}"
           body: "Automated production release assets for version ${{ github.ref_name }}."
-          artifacts: "CDT-Release.zip"
+          artifacts: "CDT-Release-${{ github.ref_name }}.zip"
           allowUpdates: true
