@@ -42,5 +42,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: desktop-app-release
-        path: |
-          **/CDT/CDT/bin/$env:BUILD_CONFIGURATION/
+        path: ${{ github.workspace }}/bin/$env:BUILD_CONFIGURATION/
