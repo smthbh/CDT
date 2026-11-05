@@ -1,0 +1,42 @@
+name: Publish Release
+
+on:
+  push:
+    tags:
+      - 'v*' # Triggers when you push a version tag like v1.1.0
+
+jobs:
+  # 1. Call the separate build workflow directly without copying code
+  call-build-workflow:
+    uses: ./.github/workflows/dotnet-framework-desktop.yml # Path to your reusable workflow file
+
+  # 2. Run the release job after the build workflow finishes successfully
+  publish-release:
+    needs: call-build-workflow
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: desktop-app-release
+          path: release-assets
+
+      # 4. Zip the folder contents into a single delivery archive
+      - name: Archive Release Assets
+        shell: pwsh
+        run: |
+          Compress-Archive -Path release-contents\* -DestinationPath CDT-Release.zip
+
+      # 5. Create the official Release with the zipped file attached
+      - name: Create Official GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+          name: "Release ${{ github.ref_name }}"
+          body: "Automated production release assets for version ${{ github.ref_name }}."
+          artifacts: "CDT-Release.zip" # Attaches the single zip file to the release page
+          allowUpdates: true
