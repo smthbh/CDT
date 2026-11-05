@@ -2,11 +2,11 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// Управление общими сведениями о сборке осуществляется с помощью 
-// набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
-// связанные со сборкой.
+// The general information about the assembly is managed using a set of
+// attributes. Change the values of these attributes to change the information
+// related to the assembly.
 [assembly: AssemblyTitle("CDT")]
-[assembly: AssemblyDescription("Программа диагностики систем впрыска топлива на базе Chrysler SBEC. Активное участие в создании принимал Bifurkas. Отдельная благодарность за вдохновление Грязнову Константину Васильевичу.")]
+[assembly: AssemblyDescription("Diagnostic software for fuel injection systems based on Chrysler SBEC. Bifurkas actively participated in its creation. Special thanks for the inspiration to Gryaznov Konstantin Vasilievich.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("By Poul Sirius poulsirius@gmail.com")]
 [assembly: AssemblyProduct("Chrysler DRBII based diagnostic software")]
@@ -14,23 +14,25 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
-// для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
-// COM, задайте атрибуту ComVisible значение TRUE для этого типа.
+// Setting the ComVisible attribute to FALSE on the assembly (default is true)
+// makes the types in the assembly invisible to COM clients.  If you need to
+// reference a type in this assembly from COM, set the ComVisible attribute to
+// TRUE on that type.
 [assembly: ComVisible(false)]
 
-// Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
+// The following GUID is used for type library identification if this project
+// is visible to COM
 [assembly: Guid("df3a256d-73d5-4a6c-b855-ee086b448761")]
 
-// Сведения о версии сборки состоят из следующих четырех значений:
+// The assembly version information consists of the following four values:
 //
-//      Основной номер версии
-//      Дополнительный номер версии 
-//      Номер построения
-//      Редакция
+//      Major version
+//      Minor version
+//      Build number
+//      Revision
 //
-// Можно задать все значения или принять номер построения и номер редакции по умолчанию, 
-// используя "*", как показано ниже:
+// You can specify all the values or omit the others by using the default
+// build and revision numbers ("*"), as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.1.*")]
 [assembly: AssemblyFileVersion("1.1.0.0")]
