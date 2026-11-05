@@ -1,5 +1,8 @@
 This is a copy of the CDT code, provided by Poul Sirius. 
+
 Used for Chrysler Diagnostic Troubleshooting.
+
+Download the latest release [here](https://github.com/smthbh/CDT/releases).
 
 Requires [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48), which is included by default with newer versions of Windows.
 
