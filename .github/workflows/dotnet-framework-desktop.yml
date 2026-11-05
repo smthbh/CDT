@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  workflow_call: # This makes the workflow reusable by other files
 
 jobs:
   build:
