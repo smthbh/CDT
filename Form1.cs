@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -251,7 +251,7 @@ namespace CDT
                     inbyte = readbytefromsci();
                 }
 
-                sendbytetosci(0x15);                                                      //Чтение иммобилайзера
+                sendbytetosci(0x15);                                                      // Reading the immobilizer
                 sendbytetosci(0xb6);
                 sendbytetosci(0x12);
                 idbyte1 = readbytefromsci();
@@ -480,12 +480,12 @@ namespace CDT
                         by[0] = readbytefromsci();
                         if (addrh == 0xb6) by[0] = 0xff;
                         if (addrh == 0xb7) by[0] = 0xff;
-                        fs.Write(by, 0, 1); // запись байт
+                        fs.Write(by, 0, 1); // writing byte
                     }
                     toolStripProgressBar1.Value = addrh;
                 }
 
-                fs.Dispose(); // освобождаем ресурсы
+                fs.Dispose(); // freeing resources
             }
             catch (Exception err)
             {
@@ -516,13 +516,13 @@ namespace CDT
                         sendbytetosci(Convert.ToByte(addrh));
                         sendbytetosci(Convert.ToByte(addrl));
                         by[0] = readbytefromsci();//Convert.ToByte(serialPort1.ReadByte());
-                        fs.Write(by, 0, 1); // запись байт
+                        fs.Write(by, 0, 1); // writing byte
                         toolStripProgressBar1.Value = 128+addrl/2;
                     }
 
                 }
 
-                fs.Dispose(); // освобождаем ресурсы
+                fs.Dispose(); // freeing resources
             }
             catch (Exception err)
             {
@@ -745,8 +745,8 @@ namespace CDT
             }
             if ((idbyte1 + idbyte2) % 255 > 1)
             {
-                textBox14.Text = "Ошибка в EEPROM!";
-                textBox15.Text = "Ошибка в EEPROM!";
+                textBox14.Text = "Error in EEPROM!";
+                textBox15.Text = "Error in EEPROM!";
             }
 
         }
@@ -833,8 +833,8 @@ namespace CDT
                 }
                 if ((idbyte1 + idbyte2) % 255 > 1)
                 {
-                    textBox14.Text = "Ошибка в EEPROM!";
-                    textBox15.Text = "Ошибка в EEPROM!";
+                    textBox14.Text = "Error in EEPROM!";
+                    textBox15.Text = "Error in EEPROM!";
                 }
         }
 
@@ -849,8 +849,8 @@ namespace CDT
             sendbytetosci(0x23);
             sendbytetosci(0x04);
             byte result = readbytefromsci();
-            if (result == 0xf0) label18.Text = "Выполнено";
-            else label18.Text = "Ошибка" + result.ToString("X2");
+            if (result == 0xf0) label18.Text = "Done";
+            else label18.Text = "Error" + result.ToString("X2");
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -859,8 +859,8 @@ namespace CDT
             sendbytetosci(0x23);
             sendbytetosci(0x02);
             byte result = readbytefromsci();
-            if (result == 0xf0) label18.Text = "Выполнено";
-            else label18.Text = "Ошибка" + result.ToString("X2");
+            if (result == 0xf0) label18.Text = "Done";
+            else label18.Text = "Error" + result.ToString("X2");
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -869,8 +869,8 @@ namespace CDT
             //sendbytetosci(0x23);
             //sendbytetosci(0x01);
             //byte result = readbytefromsci();
-            //if (result == 0xf0) label18.Text = "Выполнено";
-            //else label18.Text = "Ошибка" + result.ToString("X2");
+            //if (result == 0xf0) label18.Text = "Done";
+            //else label18.Text = "Error" + result.ToString("X2");
             for (byte f = 0; f < 255; f++)
             {
                 byte result = 0;
@@ -882,7 +882,7 @@ namespace CDT
                     result = readbytefromsci();
                 }                
             }
-            label18.Text = "Выполнено";
+            label18.Text = "Done";
         }
 
         private void label18_DoubleClick(object sender, EventArgs e)
@@ -910,7 +910,7 @@ namespace CDT
                 sendbytetosci(0xff);
                 result = readbytefromsci();
             }
-            label18.Text = "Выполнено";
+            label18.Text = "Done";
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -931,7 +931,7 @@ namespace CDT
                 while (result != 0xe2)
                 {
                     //sendbytetosci(0x1c);
-                    //sendbytetosci(0x14);                             //как записать в еепром выше 256?
+                    //sendbytetosci(0x14);                             //how to write to eeprom above 256?
                     // sendbytetosci(advbyte1);
                     // result = readbytefromsci();
                 }
@@ -994,7 +994,7 @@ namespace CDT
                 while (result != 0xe2)
                 {
                     //sendbytetosci(0x1c);
-                    //sendbytetosci(0x14);                                            //как записать в еепром выше 256?
+                    //sendbytetosci(0x14);                                            //how to write to eeprom above 256?
                     // sendbytetosci(advbyte1);
                     // result = readbytefromsci();
                 }
@@ -1050,26 +1050,26 @@ namespace CDT
                 sendbytetosci(0x4e);
                 result = readbytefromsci();
             }
-            sendbytetosci(0x15);                                                      //Чтение иммобилайзера
+            sendbytetosci(0x15);                                                      // Reading the immobilizer
             sendbytetosci(0xb6);
             sendbytetosci(0x12);
             byte idbyte1 = readbytefromsci();
             if (idbyte1 == 0xff)
             {
-                textBox13.Text = "Отсутствует";
-                textBox20.Text = "Отсутствует";
+                textBox13.Text = "Absent";
+                textBox20.Text = "Absent";
             }
             if (idbyte1 == 0x4e)
             {
-                textBox13.Text = "есть, отключен";
-                textBox20.Text = "есть, отключен";
+                textBox13.Text = "present, disabled";
+                textBox20.Text = "present, disabled";
             }
             if (idbyte1 == 0x4c)
             {
-                textBox13.Text = "Задействован";
-                textBox20.Text = "Задействован";
+                textBox13.Text = "In use";
+                textBox20.Text = "In use";
             }
-            label18.Text = "Выполнено";
+            label18.Text = "Done";
 
         }
 
@@ -1084,26 +1084,26 @@ namespace CDT
                 sendbytetosci(0x4c);
                 result = readbytefromsci();
             }
-            sendbytetosci(0x15);                                                      //Чтение иммобилайзера
+            sendbytetosci(0x15);                                                      // Reading the immobilizer
             sendbytetosci(0xb6);
             sendbytetosci(0x12);
             byte idbyte1 = readbytefromsci();
             if (idbyte1 == 0xff)
             {
-                textBox13.Text = "Отсутствует";
-                textBox20.Text = "Отсутствует";
+                textBox13.Text = "Absent";
+                textBox20.Text = "Absent";
             }
             if (idbyte1 == 0x4e)
             {
-                textBox13.Text = "есть, отключен";
-                textBox20.Text = "есть, отключен";
+                textBox13.Text = "present, disabled";
+                textBox20.Text = "present, disabled";
             }
             if (idbyte1 == 0x4c)
             {
-                textBox13.Text = "Задействован";
-                textBox20.Text = "Задействован";
+                textBox13.Text = "In use";
+                textBox20.Text = "In use";
             }
-            label18.Text = "Выполнено";
+            label18.Text = "Done";
 
 
         }
@@ -1119,26 +1119,26 @@ namespace CDT
                 sendbytetosci(0xff);
                 result = readbytefromsci();
             }
-            sendbytetosci(0x15);                                                      //Чтение иммобилайзера
+            sendbytetosci(0x15);                                                      // Reading the immobilizer
             sendbytetosci(0xb6);
             sendbytetosci(0x12);
             byte idbyte1 = readbytefromsci();
             if (idbyte1 == 0xff)
             {
-                textBox13.Text = "Отсутствует";
-                textBox20.Text = "Отсутствует";
+                textBox13.Text = "Absent";
+                textBox20.Text = "Absent";
             }
             if (idbyte1 == 0x4e)
             {
-                textBox13.Text = "есть, отключен";
-                textBox20.Text = "есть, отключен";
+                textBox13.Text = "present, disabled";
+                textBox20.Text = "present, disabled";
             }
             if (idbyte1 == 0x4c)
             {
-                textBox13.Text = "Задействован";
-                textBox20.Text = "Задействован";
+                textBox13.Text = "In use";
+                textBox20.Text = "In use";
             }
-            label18.Text = "Выполнено";
+            label18.Text = "Done";
         }
 
         private void instructionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1176,33 +1176,33 @@ namespace CDT
                     {
                         double val = 0;
                         val = (5.0 * inbyte) / 255.0;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Вольт";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Volt";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "V51")
                     {
                         double val = 0;
                         val = (5.0 * inbyte) / 255.0;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Вольт";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Volt";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "V12")
                     {
                         double val = 0;
                         val = inbyte / 16.0;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Вольт";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Volt";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "Kmh")
                     {
                         double val = 0;
                         //val = ((1024.0 * inbyte) / 65535.0) * 1.61;
                         val = inbyte * 1.61;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F1") + " Км/ч";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F1") + " km/h";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "T")
                     {
                         double val = 0;
                         val = ((460.0 * inbyte) / 255.0) - 200;
                         val = (val - 32) * 0.5556;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Град. С";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Deg. C";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "%")
                     {
@@ -1229,20 +1229,20 @@ namespace CDT
                     {
                         double val = 0;
                         val = (8192 * inbyte) / 65535.0;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F0") + " Об/Мин";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F0") + " rpm/min";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "MS2")
                     {
                         double val = 0;
                         //val = (49152 * inbyte) / 65535.0;
                         val = inbyte / 255.0;
-                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " Мс";
+                        dataGridView1.Rows[count].Cells[4].Value = val.ToString("F2") + " ms";
                     }
                     if (dataGridView1.Rows[count].Cells[2].Value == "ADV")
                     {
                         double val = 0;
                         val = inbyte / 2;
-                        dataGridView1.Rows[count].Cells[4].Value = "-" + val.ToString("F2") + " Град.";
+                        dataGridView1.Rows[count].Cells[4].Value = "-" + val.ToString("F2") + " Deg.";
                     }
                     toolStripStatusLabel2.Text = count.ToString();
                     while (serialPort1.BytesToRead > 0)
@@ -1295,30 +1295,30 @@ namespace CDT
                             {
                                 //val = (5.0 * val) / 255.0;
                                 val = val / 51;
-                                label25.Text = val.ToString("F2") + " Вольт";
+                                label25.Text = val.ToString("F2") + " Volt";
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V51")
                             {
                                 //val = (5.0 * val) / 255.0;
                                 val = val / 51;
-                                label25.Text = val.ToString("F2") + " Вольт";
+                                label25.Text = val.ToString("F2") + " Volt";
                                 tempval = tempval * 5;
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V12")
                             {
                                 val = val / 16.0;
-                                label25.Text = val.ToString("F2") + " Вольт";
+                                label25.Text = val.ToString("F2") + " Volt";
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "Kmh")
                             {
                                 val = val * 1.61;
-                                label25.Text = val.ToString("F1") + " Км/ч";
+                                label25.Text = val.ToString("F1") + " km/h";
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "T")
                             {
                                 val = ((460.0 * val) / 255.0) - 200;
                                 val = (val - 32) * 0.5556;
-                                label25.Text = val.ToString("F2") + " Град. С";
+                                label25.Text = val.ToString("F2") + " Deg. C";
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "%")
                             {
@@ -1342,17 +1342,17 @@ namespace CDT
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "RPM2")
                             {
                                 val = (8192 * val) / 255.0;
-                                label25.Text = val.ToString("F0") + " Об/Мин";
+                                label25.Text = val.ToString("F0") + " rpm/min";
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "MS2")
                             {
                                 //val = val / 255.0;
-                                label25.Text = val.ToString("F2") + " Мс";
+                                label25.Text = val.ToString("F2") + " ms";
                             }
                             if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "ADV")
                             {
                                 val = val / 2;
-                                label25.Text = "-" + val.ToString("F2") + " Град.";
+                                label25.Text = "-" + val.ToString("F2") + " Deg.";
                             }
 
 
@@ -1419,28 +1419,28 @@ namespace CDT
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V5")
                                         {
                                             val = (5.0 * val) / 255.0;
-                                            txtval = val.ToString("F2") + " Вольт";
+                                            txtval = val.ToString("F2") + " Volt";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V51")
                                         {
                                             val = val / 255.0;
-                                            txtval = val.ToString("F2") + " Вольт";
+                                            txtval = val.ToString("F2") + " Volt";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V12")
                                         {
                                             val = val / 16.0;
-                                            txtval = val.ToString("F2") + " Вольт";
+                                            txtval = val.ToString("F2") + " Volt";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "Kmh")
                                         {
                                             val = val * 1.61;
-                                            txtval = val.ToString("F1") + " Км/ч";
+                                            txtval = val.ToString("F1") + " km/h";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "T")
                                         {
                                             val = ((460.0 * val) / 255.0) - 200;
                                             val = (val - 32) * 0.5556;
-                                            txtval = val.ToString("F2") + " Град. С";
+                                            txtval = val.ToString("F2") + " Deg. C";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "%")
                                         {
@@ -1464,17 +1464,17 @@ namespace CDT
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "RPM2")
                                         {
                                             val = (8192 * val) / 255.0;
-                                            txtval = val.ToString("F0") + " Об/Мин";
+                                            txtval = val.ToString("F0") + " rpm/min";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "MS2")
                                         {
                                             //val = val / 255.0;
-                                            txtval = val.ToString("F0") + " Мс";
+                                            txtval = val.ToString("F0") + " ms";
                                         }
                                         if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "ADV")
                                         {
                                             val = val / 2;
-                                            txtval = "-" + val.ToString("F0") + " Град.";
+                                            txtval = "-" + val.ToString("F0") + " Deg.";
                                         }
                                     }
                                     if (f == 0) level0.Text = txtval;
@@ -1604,28 +1604,28 @@ namespace CDT
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V5")
                     {
                         val = (5.0 * val) / 255.0;
-                        txtval = val.ToString("F2") + " Вольт";
+                        txtval = val.ToString("F2") + " Volt";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V51")
                     {
                         val = val / 255.0;
-                        txtval = val.ToString("F2") + " Вольт";
+                        txtval = val.ToString("F2") + " Volt";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "V12")
                     {
                         val = val / 16.0;
-                        txtval = val.ToString("F2") + " Вольт";
+                        txtval = val.ToString("F2") + " Volt";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "Kmh")
                     {
                         val = val * 1.61;
-                        txtval = val.ToString("F1") + " Км/ч";
+                        txtval = val.ToString("F1") + " km/h";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "T")
                     {
                         val = ((460.0 * val) / 255.0) - 200;
                         val = (val - 32) * 0.5556;
-                        txtval = val.ToString("F2") + " Град. С";
+                        txtval = val.ToString("F2") + " Deg. C";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "%")
                     {
@@ -1649,17 +1649,17 @@ namespace CDT
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "RPM2")
                     {
                         val = (8192 * val) / 255.0;
-                        txtval = val.ToString("F0") + " Об/Мин";
+                        txtval = val.ToString("F0") + " rpm/min";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "MS2")
                     {
                         //val = val / 255.0;
-                        txtval = val.ToString("F0") + " Мс";
+                        txtval = val.ToString("F0") + " ms";
                     }
                     if (dataGridView1.Rows[comboBox1.SelectedIndex].Cells[2].Value == "ADV")
                     {
                         val = val / 2;
-                        txtval = "-" + val.ToString("F0") + " Град.";
+                        txtval = "-" + val.ToString("F0") + " Deg.";
                     }
                 }
                 if (f == 0) level0.Text = txtval;
@@ -1721,7 +1721,7 @@ namespace CDT
             EncoderParameter myEncoderParameter = new EncoderParameter(myEncoder, 100L);
             myEncoderParameters.Param[0] = myEncoderParameter;
             bmpScreenShot.Save(DateTime.Now.ToString(@"dd\_MM\_yyyy h\_mm\_ss tt") + ".jpg", icJPG, myEncoderParameters);
-            toolStripStatusLabel3.Text = "Экран сохранен в файл " + DateTime.Now.ToString(@"dd\_MM\_yyyy h\_mm\_ss tt") + ".jpg";
+            toolStripStatusLabel3.Text = "Screen saved to file " + DateTime.Now.ToString(@"dd\_MM\_yyyy h\_mm\_ss tt") + ".jpg";
         }
         private ImageCodecInfo getCodecInfo(string mt)
         {
@@ -1775,23 +1775,23 @@ namespace CDT
 
         private void MakeScreenshotToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // запоминаем размеры контрола
+            // remembering control size
             Size szCurrent = this.Size;
 
-            //ресайзим контрол до возможного максимума перед скриншотом
+            //resizing control to maximum possible before screenshot
             this.AutoSize = true;
 
-            //создаем картинку нужных размеров
+            //creating image of required size
             Bitmap bmp2 = new Bitmap(this.Width, this.Height);
 
-            //копируем изображение нужного контрола в bmp
+            //copying image of required control to bmp
             this.DrawToBitmap(bmp2, new Rectangle(new Point(), this.Size));
 
-            //возвращаем изначальные настройки контрола
+            //returning original control settings
             this.AutoSize = false;
             this.Size = szCurrent;
             bmp2.Save(DateTime.Now.ToString(@"dd\_MM\_yyyy h\_mm\_ss tt") + ".jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-            MessageBox.Show("Изображение сохранено в файл: "+ DateTime.Now.ToString(@"dd\_MM\_yyyy h\_mm\_ss tt") + ".jpg в папке этого приложения.");
+            MessageBox.Show("Image saved to file: "+ DateTime.Now.ToString(@"dd\_MM\_yyyy h\_mm\_ss tt") + ".jpg in the folder of this application.");
         }
     }
 }
