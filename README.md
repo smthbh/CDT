@@ -1,6 +1,6 @@
 This is a copy of the CDT code, provided by Poul Sirius. 
 
-Used for Chrysler Diagnostic Troubleshooting.
+Useful for Chrysler Diagnostic Troubleshooting for Jeep YJ's and other early 90s Jeeps that had OBD1.
 
 Download the latest release [here](https://github.com/smthbh/CDT/releases).
 
